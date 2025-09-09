@@ -1,0 +1,17 @@
+// Smooth scroll effect for navigation
+document.querySelectorAll("nav a").forEach(anchor => {
+  anchor.addEventListener("click", function(e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute("href")).scrollIntoView({
+      behavior: "smooth"
+    });
+  });
+});
+
+// Add a small animation when page loads
+window.addEventListener("load", () => {
+  document.querySelector("header h1").style.transform = "scale(1.2)";
+  setTimeout(() => {
+    document.querySelector("header h1").style.transform = "scale(1)";
+  }, 500);
+});
