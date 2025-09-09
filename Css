@@ -1,0 +1,91 @@
+/* General styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background: linear-gradient(-45deg, #6a11cb, #2575fc, #ff6a00, #ff3c3c);
+  background-size: 400% 400%;
+  animation: gradientBG 12s ease infinite;
+}
+
+/* Gradient animation */
+@keyframes gradientBG {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0,0,0,0.5);
+  position: sticky;
+  top: 0;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffeb3b;
+}
+
+section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.skills-list {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.skills-list li {
+  background: rgba(0,0,0,0.4);
+  padding: 10px 20px;
+  border-radius: 20px;
+  transition: transform 0.3s;
+}
+
+.skills-list li:hover {
+  transform: scale(1.1);
+}
+
+.project-card {
+  background: rgba(0,0,0,0.4);
+  padding: 20px;
+  margin: 15px auto;
+  border-radius: 15px;
+  max-width: 500px;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  background: rgba(0,0,0,0.6);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0,0,0,0.7);
+}
